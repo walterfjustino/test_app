@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -44,14 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
   // teste.add('fjjf');
 
   Future<dynamic> getApiData() {
-    String url = "http://localhost:8087/produtos + '3'";
+    String url = 'http://localhost:8087/produtos';
 
-    var result = 'http.get(Uri.encodeFull("http://localhost:8087/produtos)) + 3"';
+    var result = http.get(Uri.encodeFull(Url);
     
-    }
-
-  
     return result;
+    }
+    
   }
 
   void getJosonData() async {
@@ -111,4 +111,4 @@ class _MyHomePageState extends State<MyHomePage> {
       // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
+
